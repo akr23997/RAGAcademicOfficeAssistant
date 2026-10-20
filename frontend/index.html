@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>IIT Dharwad Academic Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>IIT Dharwad</h1>
+            <h2>Academic Office Assistant</h2>
+
+            <p>
+                Ask questions about academic rules, courses,
+                registration, examinations and timetables.
+            </p>
+        </header>
+
+        <main id="chat-box" aria-live="polite">
+            <div class="message bot">
+                Hello! Ask me an academic question.
+                I will use the available institutional documents
+                to find an answer.
+            </div>
+        </main>
+
+        <form id="chat-form">
+            <input
+                type="text"
+                id="question"
+                placeholder="Enter your question..."
+                maxlength="2000"
+                required
+            >
+
+            <button type="submit" id="send-button">
+                Send
+            </button>
+        </form>
+
+        <p id="status" role="status"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
